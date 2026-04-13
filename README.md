@@ -1,77 +1,71 @@
-# PPTAssistant: 东坡居士 AI 助手
+# PPTAssistant: Dongpo Jushi AI Assistant
 
-## 项目简介
+## Project Introduction
 
-PPTAssistant 是一个基于 PyQt5 和 OpenAI API 开发的桌面应用，模拟苏东坡与用户进行对话。用户可以通过输入问题，获得东坡居士风格的回答，同时支持字体大小调整和角色设定自定义功能。
+PPTAssistant is a desktop application developed based on PyQt5 and OpenAI API, simulating conversations with Su Dongpo. Users can input questions to receive answers in the style of Dongpo Jushi, while also supporting font size adjustment and custom role settings.
 
-
-## 项目运行截图
+## Project Screenshots
 ![f4d17af12820315556e1dcfd8694871](https://github.com/user-attachments/assets/e35d01ed-90ab-4f4d-8f20-cbfe03f27cb1)
 ![7be381eba2c68d793804da57be1777d](https://github.com/user-attachments/assets/e6ad6105-a0ca-47c9-a2cd-a556bd2bde69)
 
+## Features
 
-## 功能特点
+- **Role Play**: Engage in conversation as Su Dongpo, adhering to the expression style of Song Dynasty literati.
+- **Conversation History**: Real-time display of dialogue content, supporting scrolling through history.
+- **Font Size Adjustment**: Users can easily switch font sizes to enhance reading experience.
+- **Custom Role Settings**: Users can modify the AI's role settings via the settings dialog.
+- **Hotkey Support**: Supports `Ctrl+Enter` hotkey for sending messages, improving input efficiency.
+- **Borderless Window**: Supports borderless window display, allowing window dragging and moving.
 
-- **角色扮演**：以苏东坡的身份与用户对话，遵循宋代文人的表达方式。
-- **对话历史记录**：实时显示对话内容，支持滚动查看历史记录。
-- **字体大小调整**：用户可以轻松切换字体大小，提升阅读体验。
-- **角色设定自定义**：用户可以通过设置对话框修改 AI 的角色设定。
-- **热键支持**：支持 `Ctrl+Enter` 快捷键发送消息，提高输入效率。
-- **无边框窗口**：支持窗口无边框显示，可拖动窗口移动。
+## Usage Instructions
 
-## 使用方法
-
-1. **安装依赖**
-   - 确保已安装 Python 3.8 或更高版本。
-   - 安装 PyQt5 和 OpenAI SDK：
+1. **Install Dependencies**
+   - Ensure Python 3.8 or higher is installed.
+   - Install PyQt5 and OpenAI SDK:
      ```bash
      pip install PyQt5 openai
      ```
 
-2. **运行程序**
-   - 将代码保存为 `main.py`，运行以下命令启动应用：
+2. **Run the Program**
+   - Save the code as `main.py`, then run the following command to start the application:
      ```bash
      python main.py
      ```
 
-3. **使用指南**
-   - 输入问题后点击“发送”或按下 `Ctrl+Enter` 快捷键。
-   - 点击“⚙️ 设置”按钮可修改 AI 的角色设定。
-   - 点击“Aa 字体”按钮可调整字体大小。
-   - 点击“⨉ 关闭”按钮退出应用。
+3. **User Guide**
+   - After entering a question, click "Send" or press the `Ctrl+Enter` hotkey.
+   - Click the "⚙️ Settings" button to modify the AI's role settings.
+   - Click the "Aa Font" button to adjust the font size.
+   - Click the "⨉ Close" button to exit the application.
 
-## 项目结构
+## Project Structure
 
-- **PPTAssistant 类**
-  - 主窗口类，负责 UI 布局和事件处理。
-- **AISettingsDialog 类**
-  - 角色设定对话框，用于修改 AI 的角色设定。
-- **core 功能模块**
-  - 包含字体大小调整、角色设定更新等核心功能。
+- **PPTAssistant Class**
+  - Main window class, responsible for UI layout and event handling.
+- **AISettingsDialog Class**
+  - Role settings dialog, used to modify the AI's role settings.
+- **Core Function Modules**
+  - Contains core functions such as font size adjustment and role setting updates.
 
-## 注意事项
+## Important Notes
 
-- **API 密钥**：请将代码中的 `api_key` 替换为您的 OpenAI API 密钥。
-- **资源路径**：确保 `resource` 文件夹中包含 `character.png` 图片文件。
-- **网络问题**：如果无法连接到 OpenAI API，请检查网络连接或 API 密钥的有效性。
+- **API Key**: Replace the `api_key` in the code with your own OpenAI API key.
+- **Resource Path**: Ensure the `resource` folder contains the `character.png` image file.
+- **Network Issues**: If unable to connect to the OpenAI API, check the network connection or the validity of the API key.
 
-## 示例
+## Example
 
-### 对话示例
+### Dialogue Example
 
-用户：东坡先生，请问您对现代科技有何看法？
+User: Mr. Dongpo, what is your view on modern technology?
 
-东坡居士：吾虽生于宋代，然观今之科技，实为令人惊叹。然吾亦知，世间万物皆有其局限，科技虽能改变生活，然亦不可忘却古之智慧。
+Dongpo Jushi: Although I was born in the Song Dynasty, observing today's technology, it is truly astonishing. However, I also know that all things in the world have their limitations. While technology can change life, one must not forget ancient wisdom.
 
-### 字体大小调整
+### Font Size Adjustment
 
-用户可通过点击“Aa 字体”按钮，循环切换字体大小（18px -> 22px -> 26px -> 18px），以适应不同的阅读需求。
+Users can cycle through font sizes (18px -> 22px -> 26px -> 18px) by clicking the "Aa Font" button to adapt to different reading needs.
 
-
-## 版权声明
-
-本项目遵循 MIT 许可证，开源代码仅供学习和研究使用，未经授权不得用于商业用途。
 
 ---
 
-*感谢您的支持！*
+*Thank you for your support!*
